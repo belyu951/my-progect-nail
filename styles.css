@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+.none{
+    display: none;
+}
+
+body {
+    background-color: #1a1f25;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.slider {
+    border-radius: 15px;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.sliderr{
+    border-radius: 15px;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.slidess{
+
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slidee{
+
+    min-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+
+
+.goalleryButton{
+    margin-bottom: 15px;
+}
+
+.galleryNailss{
+    height: 506px;
+    overflow: auto;
+}
+
+.galleryPedicure{
+    height: 506px;
+    overflow: auto;
+}
+
+.galleryNailssImg{
+    border-radius: 10px;
+}
+
+.addImg{
+    margin-top: 5px;
+}
+
+
+.submitComments{
+    display: contents;
+    align-items: center;
+    display: flex;
+
+}
+
+.submitRegister{
+    display: contents;
+}
+
+
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-grid img {
+    width: 30%;
+}
+
+video {
+    width: 1150px;
+    height: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.comments-container {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.comment {
+    background: #424242;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.userColorBg{
+    color: #fff;
+}
+
+.userName, .email{
+    color: #fff;
+}
+
+.reg, .com, .vid, .gal{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+
+/* ////////////////////////////////////// */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #1a1f25;
+  font-family: 'Roboto', sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+#man-people-user, #lock-locker {
+  fill: white;
+}
+
+.wrapper {
+  width: 550px;
+  margin: 2% auto;
+}
+
+form {
+  position: relative;
+}
+
+.clear {
+  clear: both;
+}
+
+.sign-in {
+  float: left;
+  color: white;
+  font-size: 1.3em;
+}
+
+.button {
+  float: right;
+  color: #7f8084;
+  border: 1px solid #22272d;
+  padding: 7px 15px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #d3d3d3;
+}
+
+.lock {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 7px;
+  left: 5px;
+}
+.lock::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  background: #22272d;
+  top: 0px;
+  left: 100%;
+}
+
+.user {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 7px;
+  left: 5px;
+}
+.user::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  background: #22272d;
+  top: 0px;
+  left: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 5px 0;
+  outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border: 1px solid white;
+  box-shadow: none;
+}
+
+.user-input:focus .user {
+  background: white !important;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 45px;
+  color: #e6b333;
+}
+
+input[type="tel"] {
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 45px;
+  color: #e6b333;
+}
+
+input[type="submit"] {
+  background: #e6b333;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-check {
+  width: 50px;
+  height: 20px;
+  border: 1px solid #22272d;
+  border-radius: 30px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+  padding: 4px 0;
+  color: #e6b333;
+  font-size: 0.65em;
+  position: relative;
+}
+.radio-check label {
+  margin: 0 2px;
+  cursor: pointer;
+}
+.radio-check .switch-selection {
+  display: block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #babbbd;
+  margin-top: -11px;
+  margin-left: 11px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.radio-yes:checked ~ .switch-selection {
+  margin-left: 25px !important;
+}
+
+.check-label {
+  font-size: 0.8em;
+  color: #7f8084;
+  margin-top: 10px;
+  float: left;
+  padding: 3px 0;
+  margin-left: 10px;
+}
+
+.forgot-label {
+  font-size: 0.8em;
+  color: #7f8084;
+  margin-top: 10px;
+  float: right;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+
+/* ////////////////////////////////////////////// */
+#comment-form {
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+#comment-input {
+    flex: 1;
+    padding: 10px;
+}
+
+#comment-form button {
+    padding: 10px;
+}
+
+#registration-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
